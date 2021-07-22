@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="curriculo">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Curriculo">
+    <meta name="author" content="João Bonifácio">
+    <link rel="shortcut icon" href="../img/ico.ico">
+    <link rel="stylesheet" href="../css/curriculo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Curriculo</title>
+    <script src="../js/curriculo.js"></script>
+</head>
+
+<body onload="carregar()">
+    <div class="content">
+        <main>
+            <div class="main_desktop">
+                <!--<h1>Curriculo</h1>-->
+                <div class="author1">
+                    <div class="author"></div>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <h1><a href="../sobre.html">Sobre<br></a></h1>
+                        </li>
+                        <li>
+                            <h1><a href="../src/experiencia.html">Experiencia<br></a></h1>
+                        </li>
+                        <li>
+                            <h1><a class="selected" href="#">Educação<br></a></h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main_mobile">
+                <div class="author1">
+                    <div class="author"></div>
+                </div>
+                <div class="menu_mobile">
+                    <ul>
+                        <li>
+                            <h1><a href="../sobre.html">Sobre<br></a></h1>
+                        </li>
+                        <li>
+                            <h1><a href="../src/experiencia.html">Experiencia<br></a></h1>
+                        </li>
+                        <li>
+                            <h1><a class="selected" href="#">Educação<br></a></h1>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <aside id="aside">
+            <section class="aside1" id="aside1">
+                <h1>Educação e Escolaridade</h1>
+                <p>Ensino Medio completo > Conclusão no
+                    <a href="https://www.google.com/search?gs_ssp=eJzj4tZP1zcsybIwNYgvNGC0UjGoMDdLTjNOMklMNU4ySk0ztDKosDA1SjQxtUhKSUoxM06zNPSSTM7PSU3PzFdILCxNLErNSVTISkzOT8rMSwQAf_EYZg&q=colegio+aquarela+jacobina&oq=colegio+aquarela+&aqs=chrome.1.69i57j46i175i199l2j0j46i175i199j0l2j46i175i199l2.9462j0j7&sourceid=chrome&ie=UTF-8"
+                        class="contact">
+                        <abbr title="Endereço: R. Margem Rio do Ouro, 418 - Leader, Jacobina - BA, 44700-000">Colegio Aquarela</abbr>
+                    </a>em Jacobina.
+                </p>
+                <p>Curso Ensino Superior > Fisioterapia (incompleto) na
+                    <a href="https://www.google.com/search?q=unifacs+campus+getulio+vargas&sxsrf=ALeKk01ZlViH6VKGLJoyCCaq-GW4dwzM7g%3A1626895399426&ei=J3T4YMy9GYDY1sQP1KmC4As&gs_ssp=eJzj4tVP1zc0TDaxNEwpziszYLRSMagwNzQxNrc0tDQwNDQwTrO0AoqkGhqbmZgZmSRamKUZGKV4yZbmZaYlJhcrJCfmFpQWK6SnlpTmZOYrlCUWpScWAwC-yRkI&oq=unifacs+campus+ge&gs_lcp=Cgdnd3Mtd2l6EAEYADILCC4QxwEQrwEQkwIyBggAEBYQHjoHCAAQRxCwAzoHCAAQsAMQQzoECCMQJzoCCAA6BAgAEAo6EAguEMcBEK8BEOoCECcQkwI6BwgjEOoCECc6CAgAELEDEIMBOgIILjoFCC4QsQM6CAguELEDEIMBOgQIABBDOgoILhDHARCjAhBDOgsILhCxAxDHARCjAjoHCC4QsQMQQzoKCAAQsQMQgwEQQzoFCAAQsQM6CAguEMcBEK8BOg4ILhCxAxCDARDHARCvAToLCC4QsQMQxwEQrwE6CAguELEDEJMCOgUILhCTAjoHCCEQChCgAToFCCEQoAE6BAghEBU6CAghEBYQHRAeSgQIQRgAUKqPEVjbiBJgoZoSaAZwAngEgAH0AYgBsyWSAQYwLjIzLjSYAQCgAQGqAQdnd3Mtd2l6sAEKyAEKwAEB&sclient=gws-wiz"
+                        class="contact">
+                        <abbr title="Endereço: Av. Getúlio Vargas, 2.734 - Parque Getúlio Vargas, Feira de Santana - BA, 44075-525">UNIFACS campus Getulio Vargas</abbr>
+                    </a> em Feita de Santana.</p>
+                <button class="cursos" onclick="cursos()" onmouseleave="cursos1()">Certificados>></button>
+                <span id="cursos1">*clique em certificados</span>
+                <div>
+                    <p id="cursos"></p>
+                </div>
+            </section>
+            <div class="pop">
+                <h1>Certificados</h1>
+                <p></p>
+            </div>
+            <div id="hora"></div>
+        </aside>
+    </div>
+    <div class="clear "></div>
+</body>
+
+</html>
