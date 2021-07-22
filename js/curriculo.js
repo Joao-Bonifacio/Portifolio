@@ -19,6 +19,7 @@ function carregar() {
 function cursos() {
     let windowHeight = window.innerHeight;
     let screenHeight = screen.height;
+    document.getElementById('cursos1').style = 'display:none;'
     document.getElementById('cursos').innerHTML =
         `<div style="height:90%">
             <p>Logica de Programação (DankiCode) *validação com cpf</p>
@@ -43,6 +44,7 @@ function cursos() {
 
 function fechaCursos() {
     document.getElementById('cursos').innerHTML = '';
+    document.getElementById('cursos1').style = ''
     document.getElementById('aside1').style = ''
     document.getElementById('aside').style = ''
 }
