@@ -1,8 +1,8 @@
 function carregar() {
     let msg = document.getElementById('hora')
     let data = new Date()
-    let hora = (data.getHours())
-    let min = (data.getMinutes())
+    let hora = data.getHours()
+    let min = data.getMinutes()
     if (min < 10) {
         min = `0${min}`
     }
